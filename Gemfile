@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 # gems
 gem 'sinatra'
+gem 'rspec'
 gem 'sinatra-contrib'
 gem 'thin'
 gem 'webrick'
