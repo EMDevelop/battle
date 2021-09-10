@@ -1,15 +1,15 @@
 <div>
-  <p> <%="#{@player_one} vs #{@player_two}"%> </p>
+  <p> <%="#{@game.player_one.name} vs #{@game.player_two.name}"%> </p>
 
   <h1>Battle</h1>
 
   <h4>Last Action</h4>
-  <p> <%="#{@player_one}: 60/60 HP"%> </p>
+  <p> <%="#{@game.player_one.name}: #{@game.player_one.hp}/60 HP"%> </p>
   <form action="/attack">
     <input type="submit" value ="Attack" 
   <form> 
   <br>
   <br>
-  <p> <%="#{@player_two}: 60/60 HP"%> </p>
+  <p> <%="#{@game.player_two.name}: #{@game.player_two.hp}/60 HP"%> </p>
 </div>
 
