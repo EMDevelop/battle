@@ -22,6 +22,11 @@ describe 'the home screen', type: :feature do
       expect(page).to have_content 'Billy: 60/60 HP'
     end
 
+    it 'I want to attack Player 2, and I want to get a confirmation' do
+      click_button("Attack")
+      expect(page).to have_content 'Ed attacked Billy'
+    end
+
   end
 
 end
