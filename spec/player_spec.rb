@@ -1,4 +1,4 @@
-require 'player'
+require 'person'
 
 describe Person do
 
