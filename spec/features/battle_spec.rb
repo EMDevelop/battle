@@ -1,8 +1,14 @@
 describe 'the home screen', type: :feature do
 
-    it 'checks text appears on screen' do
+    it 'checks names appear on screen from a form submit' do
       visit('/')
-      expect(page).to have_content 'Testing infrastructure working!'
+
+      fill_in('player_one', with: 'Ed')
+      fill_in('player_two', with: 'Billy')
+      click_button('Play')
+
+      expect(page).to have_content 'Ed'
+      expect(page).to have_content 'Billy'
     end
 
 end
