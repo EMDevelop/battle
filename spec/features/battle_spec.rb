@@ -1,10 +1,7 @@
 describe 'the home screen', type: :feature do
 
   before do
-    visit('/')
-    fill_in('player_one', with: 'Ed')
-    fill_in('player_two', with: 'Billy')
-    click_button('Play')
+    submit_name_form
   end
 
   context 'We want to Start a fight by entering our names and seeing them' do

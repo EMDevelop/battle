@@ -1,6 +1,7 @@
 require 'capybara/rspec'
 require 'capybara'
 require 'rspec'
+require_relative './features/helper'
 require_relative '../app.rb'
 
 Capybara.configure do |config|
